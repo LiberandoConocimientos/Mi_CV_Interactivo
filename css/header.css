@@ -36,7 +36,7 @@
 
 #logo-tittle h1 b {
 	color: var(--tittleB);
-	font-size: calc(var(--tamanoLetra) * 1.5rem);
+	font-size: calc(var(--tamanoLetra) * 1.4rem);
 	transition: all .5s;
 	text-shadow: 0 .1rem .17rem var(--gris);
 }
