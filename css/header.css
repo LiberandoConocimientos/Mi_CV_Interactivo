@@ -1,0 +1,57 @@
+/*------------------------------------------------------*/
+/* HEADER:  Encabezado, titulo, menú principal
+/*------------------------------------------------------*/
+
+
+/* if backdrop support: very transparent and blurred */
+#header {
+	width: 100%;
+	height: 5rem;
+	padding: 1.5rem 1rem;
+
+	/* distorsiona el fondo y lo hace semi-transparente */
+	background: linear-gradient(var(--transparenciaA), var(--transparenciaB), var(--transparenciaC));	/* Transparencia */
+	backdrop-filter: blur(.3rem);					/* Chrome y Opera, no funciona en Firefox */
+	box-shadow: 0 -.3rem 1rem var(--grisOscuro);
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	transition: all .7s;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+}
+
+
+/* Nombre y Logo Header
+/*---------------------------------------*/
+#logo-tittle h1 {
+	color: var(--tittleA);
+	font-size: calc(var(--tamanoLetra) * 2rem);
+	transition: all .5s;
+	text-shadow: 0 .1rem .17rem var(--gris);
+}
+
+#logo-tittle h1 b {
+	color: var(--tittleB);
+	font-size: calc(var(--tamanoLetra) * 1.5rem);
+	transition: all .5s;
+	text-shadow: 0 .1rem .17rem var(--gris);
+}
+
+
+/* Botón menu hamburguesa
+/*---------------------------------------*/
+#nav-bars {
+	font-size: calc(var(--tamanoLetra) * 2rem);
+	color: var(--tittleB);
+	text-shadow: 0 .1rem .17rem var(--gris);
+	cursor: pointer;
+	margin-right: 1rem;
+}
+
+#nav-bars:hover {
+	color: var(--tittleA);
+}

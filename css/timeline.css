@@ -1,0 +1,85 @@
+/*----------------------------------*/
+/* BODY Line Time Profile
+/*----------------------------------*/
+
+
+#body-timeline {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 2%;
+	margin-bottom: 3%;
+}
+
+#body-timeline > div {
+	transition: all .3s;
+	cursor: pointer;
+}
+
+#body-timeline > .enable-select > div > span {
+	border-bottom: 2px ridge var(--blanco3);
+	border-right: 2px ridge var(--blanco3);
+}
+
+#body-timeline > div > div {
+	display: grid;
+	grid-template-rows: auto;
+	justify-items: center;
+	grid-gap: .2rem;
+}
+
+#body-timeline > div span {
+	width: calc(var(--tamanoLetra) * 5rem);
+	height: calc(var(--tamanoLetra) * 5rem);
+	border-radius: 50%;
+	position: relative;
+}
+
+#body-timeline > div div:hover {
+	transform: scale(1.05);
+}
+
+#body-timeline > div i {
+	color: var(--parrafoI);
+	font-size: calc(var(--tamanoLetra) * 1rem);
+}
+
+#body-timeline > div:hover span {
+	border-bottom: 2px ridge var(--blanco3);
+	border-right: 2px ridge var(--blanco3);
+}
+
+#body-timeline > div:first-child span::after {
+	background-image: url("../img/carnet.svg");
+}
+
+#body-timeline > div:nth-child(0n+2) span::after {
+	background-image: url("../img/estudios.svg");
+}
+
+#body-timeline > div:nth-child(0n+3) span::after {
+	background-image: url("../img/experiencias.svg");
+}
+
+#body-timeline > div:nth-child(0n+4) span::after {
+	background-image: url("../img/habilidades.svg");
+}
+
+#body-timeline > div:last-child span::after {
+	background-image: url("../img/rrss.svg");
+}
+
+#body-timeline > div:first-child span::after, #body-timeline > div:nth-child(0n+2) span::after, #body-timeline > div:nth-child(0n+3) span::after,
+#body-timeline > div:nth-child(0n+4) span::after, #body-timeline > div:last-child span::after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width: calc(var(--tamanoLetra) * 3rem);
+	height: calc(var(--tamanoLetra) * 3rem);
+	background-size: cover;
+	background-position: center;
+}

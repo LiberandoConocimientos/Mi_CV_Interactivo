@@ -1,0 +1,122 @@
+/*---------------------------------------------------*/
+/* START: Formatos y variables globales
+/*---------------------------------------------------*/
+
+
+* {
+	font-family: 'Sen', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+	text-decoration: none;
+	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+:root {
+	--gris: #bbbbbb; --grisClaro: #F0F0F0; --grisMedio: #a0a0a0; --grisOscuro: #202020; --negro: #000;
+	--gris90: #4f4f4f; --blanco1: #ffffff; --blanco2: #eFeFeF; --blanco3: #e0e0e0; 
+	--blanco1T5: rgba(255,255,255,.5); --blanco1T9: rgba(255,255,255,.9);
+	--negroT5: rgba(0,0,0,.5); --negroT9: rgba(0,0,0,.9); --negroT7: rgba(0,0,0,.7);
+	--azulPuro: #0000FF; --azulRey: #1E90FF; --naranjaWin: #ffa500;
+
+	/* Variable responsive ----------------------------------*/
+	--tamanoLetra: 1;
+}
+
+.light {
+	--fondoBody: var(--blanco3);		/* start */
+
+	--transparenciaA: var(--blanco1);		/* Header */
+	--transparenciaB: var(--blanco1T9);
+	--transparenciaC: var(--blanco1T5);
+	--tittleA: var(--azulPuro);
+	--tittleB: var(--azulRey);
+
+ 	--menuHeader: var(--azulPuro);		/* menu */
+ 	--subMenuHeader: var(--azulRey);
+
+	--iconoBigShadow: var(--gris);		/* main */
+	--iconSkills: var(--azulRey);
+	--parrafoB: var(--azulRey);
+	--parrafoI: var(--grisOscuro);
+	--parrafoP: var(--parrafoI);
+	--profileP: var(--parrafoI);
+	--parrafoStrong:  var(--azulRey);
+	--parrafoStrongHover: var(--azulPuro);
+
+	--fondoFooter: var(--azulRey);		/* footer */
+	--sombraIconoTop: #23a6ff;
+	--sombraIconoBotton: #1a7ad9;
+}
+
+.dark {
+	--fondoBody: var(--grisOscuro);
+
+	--transparenciaA: var(--negro);
+	--transparenciaB: var(--negroT9);
+	--transparenciaC: var(--negroT5);
+	--tittleA: var(--blanco1);
+	--tittleB: var(--gris);
+
+	--menuHeader: var(--blanco1);
+	--subMenuHeader: var(--gris90);
+
+	--iconoBigShadow: var(--grisOscuro);
+	--iconSkills: var(--blanco1);
+	--parrafoB: var(--blanco1);
+	--parrafoI: var(--grisClaro);
+	--parrafoP: var(--parrafoI);
+	--profileP: var(--parrafoI);
+	--parrafoStrong:  var(--grisMedio);
+	--parrafoStrongHover: var(--blanco1);
+
+	--fondoFooter: var(--negro);
+	--sombraIconoTop: var(--gris90);
+	--sombraIconoBotton: var(--grisOscuro);
+}
+
+
+
+
+/*-
+/* Viewport
+/*-------------------------------------------------------------*/
+
+@media only screen and (max-width: 1140px) {
+	body {
+		--tamanoLetra: 0.7;
+	}
+}
+
+body {
+	background: var(--fondoBody);
+	min-width: 23rem;	/* Mínimo de reducción mostrado en pantalla */
+}
+
+main {
+	width: 100%;
+	padding: 1%;
+	margin-top: 5rem;
+}
+
+main #body-blank {
+	width: 80%;
+	height: 80rem;
+	background: var(--fondoBody);
+}
+
+.class-hidden {
+	display: none;
+}
+
+.disable-select {
+	/* Por ahora lo puse para todo el documento */
+}

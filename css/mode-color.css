@@ -1,0 +1,47 @@
+/*--------------------------------------------------------*/
+/* MODE COLOR: Modo Oscuro o claro
+/*--------------------------------------------------------*/
+
+
+#body-screen {
+	position: fixed;
+	left: .5rem;
+	bottom: 15%;
+}
+
+#body-screen > .lbl-color {
+    cursor: pointer;
+    position: relative;
+}
+
+#body-screen > .lbl-color::after{
+	content: "";
+	top: 0;
+	left: 0;
+	z-index: 210;
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 50%;
+	position: absolute;
+	transition: ease .5s;
+}
+
+#body-screen > .lbl-color::after {
+	background-image: url("../img/luna.svg");
+	background-size: cover;
+	background-color: var(--grisOscuro);
+	background-position: center;
+	border: 3px ridge var(--grisMedio);
+}
+
+#body-screen > #swich-one:checked + .lbl-color::after {
+	background-image: url("../img/sol.svg");
+	background-size: cover;
+	background-color: var(--naranjaWin);
+	background-position: center;
+	border: 3px ridge var(--blanco1);
+}
+
+#body-screen > #swich-one {
+	display: none;
+}

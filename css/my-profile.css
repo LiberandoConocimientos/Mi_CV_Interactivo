@@ -1,0 +1,139 @@
+/*----------------------------------*/
+/* MAIN:  Relleno;
+/*----------------------------------*/
+
+
+#body-profile {
+	position: relative;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+
+/* Iconos Dirección y Contactos ----------------------------------*/
+#icon-profile {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10rem;
+	height: 4rem;
+	z-index: 50;
+}
+
+#icon-profile-contact::before, #icon-profile-adress::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	width: calc(var(--tamanoLetra) * 4rem);
+	height: calc(var(--tamanoLetra) * 4rem);
+	border-radius: 50%;
+	border: 2px solid var(--blanco1);
+	background: var(--azulRey);
+}
+
+#icon-profile-contact::before {
+	right: 0rem;
+}
+
+#icon-profile-adress::before {
+	right: 4.5rem;
+}
+
+#icon-profile-contact::after, #icon-profile-adress::after {
+	position: absolute;
+	content: "";
+	top: .6rem;
+	width: calc(var(--tamanoLetra) * 3rem);
+	height: calc(var(--tamanoLetra) * 3rem);
+	background-position: center;
+	background-size: cover;
+	z-index: 10;
+	cursor: pointer;
+}
+
+#icon-profile-contact::after  {
+	right: 5rem;
+	background-image: url("../img/contacto.svg");
+}
+
+#icon-profile-adress::after {
+	top: 0;
+	right: 0;
+	width: calc(var(--tamanoLetra) * 4.5rem);
+	height: calc(var(--tamanoLetra) * 4.5rem);
+	background-image: url("../img/adress.svg");
+}
+
+
+
+/* Contenido de mi perfil ----------------------------------*/
+#profile {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+#profile > div {
+	width: calc(var(--tamanoLetra) * 50rem);
+	padding: 0 1rem;
+}
+
+#profile img {
+	width: calc(var(--tamanoLetra) * 25rem);
+	height: calc(var(--tamanoLetra) * 25rem);
+	border-radius: 50%;
+	border: .3rem solid var(--blanco1);
+}
+
+#profile > div h3 {
+	font-size: calc(var(--tamanoLetra) * 6rem);
+	color: var(--parrafoB);
+	text-shadow: 0 .1rem .17rem var(--gris);
+	transition: all .5s;
+}
+
+#profile > div h4 {
+	font-family: arial;
+	font-size: calc(var(--tamanoLetra) * 3rem);
+	color: var(--parrafoI);
+	text-shadow: 0 .1rem .17rem var(--gris);
+	transition: all .5s;
+}
+
+#profile > div p {
+	font-size: calc(var(--tamanoLetra) * 1.5rem);
+	color: var(--parrafoP);
+	padding-right: 1%;
+}
+
+#profile > div strong {
+	color: var(--parrafoStrong);
+	text-shadow: 0 .1rem .17rem var(--gris);
+	position: relative;
+	cursor: pointer;
+}
+
+#profile > div i {
+	text-decoration: underline;
+}
+
+#profile > div strong:hover {
+	color: var(--parrafoStrongHover);
+}
+
+#profile > div strong:hover::after {
+	content: "Iniciando como nivel Junior";
+	font-size: calc(var(--tamanoLetra) * 1rem);
+	position: absolute;
+	top: -3rem;
+	left: 0;
+	padding: .8rem;
+	width: max-content;
+	background: var(--grisOscuro);
+	color: var(--blanco1);
+	opacity: .7;
+	border-radius: .3rem;
+}

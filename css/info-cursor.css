@@ -1,0 +1,40 @@
+/*--------------------------------------------------------*/
+/* CONTROL MOUSE:  Control posición y sobra del ratón
+/*--------------------------------------------------------*/
+
+#cursor-info, #date-time {
+	color: var(--grisOscuro);
+	opacity: .5;
+	z-index: 200;
+}
+
+#cursor-info {
+	position: fixed;
+	font-size: .8rem;
+	right: .1rem;
+	top: .1rem;
+	padding: .2rem .5rem;
+	border: .1rem solid var(--parrafoI);
+	color: var(--parrafoI);
+	border-radius: 1rem;
+	opacity: .5;
+	z-index: 200;
+	box-shadow:  .2rem .2rem .8rem var(--gris),
+            	 -.2rem -.2rem .8rem var(--blanco1);
+}
+
+#date-time {
+	position: fixed;
+	font-size: 1rem;
+	right: .1rem;
+	top: 3.3rem;
+	padding: .2rem .5rem;
+	color: var(--parrafoI);
+	border-radius: 1rem;
+	opacity: .5;
+	z-index: 200;
+}
+
+.cursor-hidden {
+	display: none;
+}

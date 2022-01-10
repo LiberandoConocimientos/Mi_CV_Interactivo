@@ -1,0 +1,53 @@
+/*-----------------------------------------------------------*/
+/* FOOTER: Elementos del Pié de página
+/*-----------------------------------------------------------*/
+
+#footer {
+	width: 100%;
+	background: var(--fondoFooter);
+	padding: 4% 0;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+
+/* copyright
+/*---------------------------------------*/
+#footer > #copyright {
+	width: auto;
+	color: var(--blanco1);
+	position: absolute;
+	left: 3rem;
+	bottom: 4.5rem;
+}
+
+
+/* Resdes Sociales
+/*---------------------------------------*/
+#footer > .icon-foot {
+	width: 3.5rem;
+	height: 3.5rem;
+	margin: 0 .5rem;
+	border-radius: 50%;
+	border-bottom: 1px ridge transparent;
+	border-right: 1px ridge transparent;
+	box-shadow:  -.3rem -.3rem 1rem var(--sombraIconoTop),
+            	 .3rem .3rem 1rem var(--sombraIconoBotton);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#footer > .icon-foot a {
+	font-size: 2.1rem;
+	text-decoration: none;
+	color: var(--blanco1);
+}
+
+#footer > .icon-foot:hover {
+	cursor: pointer;
+	border-bottom: 1px ridge var(--blanco2);
+	border-right: 1px ridge var(--blanco2);
+}

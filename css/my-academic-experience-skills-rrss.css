@@ -1,0 +1,144 @@
+/*----------------------------------*/
+/* MAIN:  Relleno;
+/*----------------------------------*/
+
+
+#body-academic, #body-experience, #body-skills, , #line-rrss {
+	position: relative;
+	padding: 0 1%;
+	margin-bottom: 3rem;
+}
+
+
+/* Iconos de Dirección y Contactos ----------------------------------*/
+#line-academic > h2, #line-experience > h2, #line-skills > h2, #line-rrss > h2 {
+	font-size: calc(var(--tamanoLetra) * 3rem);
+	color: var(--tittleA);
+	text-align: center;
+}
+
+#line-academic, #line-experience, #line-skills, #line-rrss {
+	width: 100%;
+	height: max-content;
+	margin-top: 4rem;
+	border-radius: .8rem;
+	z-index: 0;
+	position: relative;
+	padding: 0 0 1rem 6%;
+	display: grid;
+	grid-template-rows: auto;
+	grid-gap: 2rem;
+}
+
+#line-academic::after, #line-experience::after, #line-skills::after, #line-rrss::after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: .2rem;
+	height: 100%;
+	background: linear-gradient(0deg, var(--blanco3) 0%, var(--azulRey) 50%, var(--blanco3) 100%);
+	border-radius: .8rem;
+}
+
+
+/* Este espacio es solo para las RRSS  --------------------------*/
+#line-rrss > div {
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+#line-rrss > div > a b {
+	display: absolute;
+	top: 0;
+	padding: 0 4rem;
+	font-size: calc(var(--tamanoLetra) * 2.5rem);
+	color: var(--tittleB);
+}
+
+#line-rrss > div > a:hover > b {
+	color: var(--tittleA);
+}
+
+#line-rrss div:last-child {
+	padding-bottom: 10rem;
+}
+
+#line-rrss i {
+	position: absolute;
+
+	font-size: calc(var(--tamanoLetra) * 3.3rem);
+	color: var(--iconSkills);
+}
+/*-----------------------------------------------------------------*/
+
+
+#line-academic > div, #line-experience > div, #line-skills > div {
+	width: 100%;
+	height: max-content;
+	padding: 2%;
+	border-radius: .8rem;
+	position: relative;
+	border: 1px solid transparent;
+
+}
+
+#line-academic > div:hover, #line-experience > div:hover, #line-skills > div:hover {
+	border: 1px solid var(--parrafoStrong);
+}
+
+#line-academic > div::after, #line-experience > div::after, #line-skills > div::after {
+	position: absolute;
+	content: "";
+	left: -6%;
+	top: 45%;
+	width: 1rem;
+	height: 1rem;
+	background: var(--gris);
+	border-radius: 50%;
+}
+
+#line-academic > div:hover::after, #line-experience > div:hover::after, #line-skills > div:hover::after {
+	background: var(--tittleA);
+
+}
+
+#line-academic h3, #line-experience h3, #line-skills h3 {
+	font-size: calc(var(--tamanoLetra) * 1.8rem);
+	color: var(--tittleA);
+}
+
+#line-academic p, #line-experience p, #line-skills p {
+	font-size: calc(var(--tamanoLetra) * 1.4rem);
+	color: var(--tittleB);
+}
+
+#line-academic strong, #line-experience strong, #line-skills strong {
+	color: var(--parrafoStrongHover);
+}
+
+#line-academic b, #line-experience b, #line-skills b {
+	text-decoration: underline;
+}
+
+#line-academic img, #line-experience img, #line-skills img {
+	width: calc(var(--tamanoLetra) * 1.2rem);
+	height: calc(var(--tamanoLetra) * 1.2rem);
+	margin-left: .5rem;
+}
+
+#box-academic, .box-experience, .box-skills {
+	display: grid;
+	grid-template-rows: auto;
+	grid-gap: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+#box-academic > p, .box-experience > p, .box-skills > p {
+	margin-left: 2rem;
+}
+
+#box-academic > p > img, .box-experience > p > img, .box-skills > p > img {
+	margin-left: 0;
+	margin-right: 2%;
+}
