@@ -33,6 +33,7 @@
 	height: calc(var(--tamanoLetra) * 5rem);
 	border-radius: 50%;
 	position: relative;
+	--volume: calc(var(--tamanoLetra) * 3rem);
 }
 
 #body-timeline > div div:hover {
@@ -50,36 +51,29 @@
 }
 
 #body-timeline > div:first-child span::after {
-	background-image: url("../img/carnet.svg");
+	background: url("../img/carnet.svg") center /var(--volume) no-repeat;
 }
 
 #body-timeline > div:nth-child(0n+2) span::after {
-	background-image: url("../img/estudios.svg");
+	background: url("../img/estudios.svg") center /var(--volume) no-repeat;
 }
 
 #body-timeline > div:nth-child(0n+3) span::after {
-	background-image: url("../img/experiencias.svg");
+	background: url("../img/experiencias.svg") center /var(--volume) no-repeat;
 }
 
 #body-timeline > div:nth-child(0n+4) span::after {
-	background-image: url("../img/habilidades.svg");
+	background: url("../img/habilidades.svg") center /var(--volume) no-repeat;
 }
 
 #body-timeline > div:last-child span::after {
-	background-image: url("../img/rrss.svg");
+	background: url("../img/rrss.svg") center /var(--volume) no-repeat;
 }
 
 #body-timeline > div:first-child span::after, #body-timeline > div:nth-child(0n+2) span::after, #body-timeline > div:nth-child(0n+3) span::after,
 #body-timeline > div:nth-child(0n+4) span::after, #body-timeline > div:last-child span::after {
 	position: absolute;
 	content: "";
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	margin: auto;
-	width: calc(var(--tamanoLetra) * 3rem);
-	height: calc(var(--tamanoLetra) * 3rem);
-	background-size: cover;
-	background-position: center;
+	width: calc(var(--tamanoLetra) * 5rem);
+	height: calc(var(--tamanoLetra) * 5rem);
 }

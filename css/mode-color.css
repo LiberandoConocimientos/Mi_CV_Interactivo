@@ -19,26 +19,20 @@
 	top: 0;
 	left: 0;
 	z-index: 210;
-	width: 3.5rem;
-	height: 3.5rem;
+	width: 3rem;
+	height: 3rem;
 	border-radius: 50%;
 	position: absolute;
 	transition: ease .5s;
 }
 
 #body-screen > .lbl-color::after {
-	background-image: url("../img/luna.svg");
-	background-size: cover;
-	background-color: var(--grisOscuro);
-	background-position: center;
+	background: url("../img/luna.svg") center /2.5rem no-repeat var(--grisOscuro);
 	border: 3px ridge var(--grisMedio);
 }
 
 #body-screen > #swich-one:checked + .lbl-color::after {
-	background-image: url("../img/sol.svg");
-	background-size: cover;
-	background-color: var(--naranjaWin);
-	background-position: center;
+	background: url("../img/sol.svg") center /2.5rem no-repeat var(--naranjaWin);
 	border: 3px ridge var(--blanco1);
 }
 

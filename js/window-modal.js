@@ -16,7 +16,7 @@ iconProfile.addEventListener("click", function(e) {
 	let tittle, text, color;
 	if (e.target == iconContac) {
 		color = black;
-		tittle = "Medios de Contacto";
+		tittle = "Contactos";
 		text = "Telefono: +54 9 11 26890851<br><br>Email: centroceicca@gmail.com"
 	} else if (e.target == iconAdress) {
 		color = black;
@@ -37,8 +37,8 @@ closeModal.addEventListener("click", function() {
 })
 
 function openModal(tittle, text, color) {
-	document.getElementById(`window-modal`).style.transform = "scale(0.8)";
-	bodyModal.style.background = `rgba(${color},.7)`;
+	document.getElementById(`window-modal`).style.transform = "scale(0.9)";
+	bodyModal.style.background = `rgba(${color},0.7)`;
 	document.querySelector(`#window-modal > h3`).innerHTML = tittle;
 	document.querySelector(`#window-modal > p`).innerHTML = text;
 }

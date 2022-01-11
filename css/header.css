@@ -32,11 +32,12 @@
 	font-size: calc(var(--tamanoLetra) * 2rem);
 	transition: all .5s;
 	text-shadow: 0 .1rem .17rem var(--gris);
+	position: relative;
 }
 
 #logo-tittle h1 b {
 	color: var(--tittleB);
-	font-size: calc(var(--tamanoLetra) * 1.4rem);
+	font-size: calc(var(--tamanoLetra) * 1.3rem);
 	transition: all .5s;
 	text-shadow: 0 .1rem .17rem var(--gris);
 }
