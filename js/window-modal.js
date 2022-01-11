@@ -37,7 +37,7 @@ closeModal.addEventListener("click", function() {
 })
 
 function openModal(tittle, text, color) {
-	document.getElementById(`window-modal`).style.transform = "scale(0.8)";
+	document.getElementById(`window-modal`).style.transform = "scale(0.9)";
 	bodyModal.style.background = `rgba(${color},.7)`;
 	document.querySelector(`#window-modal > h3`).innerHTML = tittle;
 	document.querySelector(`#window-modal > p`).innerHTML = text;
