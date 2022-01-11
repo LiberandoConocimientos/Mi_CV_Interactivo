@@ -19,21 +19,20 @@
 	top: 0;
 	left: 0;
 	z-index: 210;
-	width: 3rem;
-	height: 3rem;
+	width: calc(var(--tamanoLetra) * 4rem);
+	height: calc(var(--tamanoLetra) * 4rem);
 	border-radius: 50%;
 	position: absolute;
 	transition: ease .5s;
+	border: 2px solid var(--blanco1);
 }
 
 #body-screen > .lbl-color::after {
-	background: url("../img/luna.svg") center /2.5rem no-repeat var(--grisOscuro);
-	border: 3px ridge var(--grisMedio);
+	background: url("../img/luna.svg") center /calc(var(--tamanoLetra) * 3.2rem) no-repeat var(--grisOscuro);
 }
 
 #body-screen > #swich-one:checked + .lbl-color::after {
-	background: url("../img/sol.svg") center /2.5rem no-repeat var(--naranjaWin);
-	border: 3px ridge var(--blanco1);
+	background: url("../img/sol.svg") center /calc(var(--tamanoLetra) * 3.2rem) no-repeat var(--naranjaWin);
 }
 
 #body-screen > #swich-one {
